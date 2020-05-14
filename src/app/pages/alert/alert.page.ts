@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertPage implements OnInit {
 
+  titulo = 'Alerta';
+
   constructor() { }
 
   ngOnInit() {
