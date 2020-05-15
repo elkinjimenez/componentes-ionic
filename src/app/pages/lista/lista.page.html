@@ -1,9 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>lista</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<app-header [titulo]="'To-Do'"></app-header>
+<ion-content class="ion-padding">
+  <h2>Mis tareas diarias...</h2>
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox color="{{entry.color}}" slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
 </ion-content>
+<ion-button class="ion-margin font-weight-bold" size="large" (click)="input()" expand="block" fill="outline">Nueva tarea
+</ion-button>
