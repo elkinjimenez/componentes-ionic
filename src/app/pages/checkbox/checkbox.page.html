@@ -1,0 +1,10 @@
+<app-header [titulo]="'CheckBox'"></app-header>
+<ion-content class="ion-padding">
+  <h2>Mis tareas diarias...</h2>
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox color="{{entry.color}}" slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

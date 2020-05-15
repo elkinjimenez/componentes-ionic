@@ -9,16 +9,20 @@ export class InicioPage implements OnInit {
 
   componentes: Componente[] = [
     {
+      nombre: 'Avatar',
+      url: '/avatar'
+    },
+    {
       nombre: 'Alerta',
       url: '/alert'
     },
     {
-      nombre: 'Action sheet',
-      url: '/action-sheet'
+      nombre: 'Lista por hacer',
+      url: '/lista'
     },
     {
-      nombre: 'Avatar',
-      url: '/avatar'
+      nombre: 'Action sheet',
+      url: '/action-sheet'
     },
     {
       nombre: 'Badges',
@@ -29,8 +33,12 @@ export class InicioPage implements OnInit {
       url: '/button'
     },
     {
-      nombre: 'tarjetas',
+      nombre: 'Tarjetas',
       url: '/card'
+    },
+    {
+      nombre: 'Checkbox',
+      url: '/checkbox'
     }
   ]
 
