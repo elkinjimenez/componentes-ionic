@@ -9,10 +9,6 @@ export class InicioPage implements OnInit {
 
   componentes: Componente[] = [
     {
-      nombre: 'Avatar',
-      url: '/avatar'
-    },
-    {
       nombre: 'Alerta',
       url: '/alert'
     },
@@ -39,6 +35,15 @@ export class InicioPage implements OnInit {
     {
       nombre: 'Checkbox',
       url: '/checkbox'
+    },
+    {
+      nombre: 'Chip',
+      url: '/chip'
+    }
+    ,
+    {
+      nombre: 'Fecha',
+      url: '/datetime'
     }
   ]
 

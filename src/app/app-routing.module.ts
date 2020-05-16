@@ -20,10 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
   {
-    path: 'avatar',
-    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
-  },
-  {
     path: 'badge',
     loadChildren: () => import('./pages/badge/badge.module').then( m => m.BadgePageModule)
   },
@@ -42,6 +38,14 @@ const routes: Routes = [
   {
     path: 'lista',
     loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
 ];
 

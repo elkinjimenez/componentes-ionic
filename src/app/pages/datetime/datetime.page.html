@@ -1,0 +1,15 @@
+<app-header [titulo]="'Fecha'"></app-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Fecha de nacimiento:</ion-label>
+    <ion-datetime [(ngModel)]="fechaNacimiento" ancelText="Salir" doneText="Aceptar"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-datetime placeholder="{{fechaNacimiento | date: 'yyy-MM-dd'}}" [(ngModel)]="fechaNacimiento"
+      (change)="cambioFecha()"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-datetime [(ngModel)]="fechaNacimiento" placeholder="{{fechaNacimiento | date: 'yyy-MM-dd'}}"
+      [pickerOptions]="customPickerOptions" [yearValues]="customYearValues"></ion-datetime>
+  </ion-item>
+</ion-content>
