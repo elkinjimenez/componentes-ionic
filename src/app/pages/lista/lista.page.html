@@ -2,11 +2,16 @@
 <ion-content class="ion-padding">
   <h2>Mis tareas diarias...</h2>
   <ion-list>
-    <ion-item *ngFor="let entry of form">
-      <ion-label>{{entry.val}}</ion-label>
-      <ion-checkbox color="{{entry.color}}" slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    <ion-item *ngFor="let t of tareas">
+      <ion-label>{{t.val}} <br>
+        <ion-icon name="time-outline"></ion-icon> <small> {{t.fecha | date: 'MMM dd | hh:mm'}}</small>
+      </ion-label>
+      <ion-checkbox color="{{t.color}}" slot="end" [(ngModel)]="t.isChecked"></ion-checkbox>
     </ion-item>
   </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="input()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
-<ion-button class="ion-margin font-weight-bold" size="large" (click)="input()" expand="block" fill="outline">Nueva tarea
-</ion-button>

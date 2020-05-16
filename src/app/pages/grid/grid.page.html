@@ -1,0 +1,15 @@
+<app-header [titulo]="'Sistema de grillas'"></app-header>
+<ion-content class="ion-padding">
+  <h2 class="ion-padding-start">Grillas de prueba...</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let t of grid" size="{{t}}" size-sm>
+        <ion-card class="ion-no-margin">
+          <ion-card-content class="ion-text-center">
+            {{t}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

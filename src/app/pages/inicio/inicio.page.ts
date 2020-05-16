@@ -39,11 +39,18 @@ export class InicioPage implements OnInit {
     {
       nombre: 'Chip',
       url: '/chip'
-    }
-    ,
+    },
     {
       nombre: 'Fecha',
       url: '/datetime'
+    },
+    {
+      nombre: 'Botón flotante',
+      url: '/fab'
+    },
+    {
+      nombre: 'Sistema de grillas',
+      url: '/grid'
     }
   ]
 

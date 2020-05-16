@@ -10,9 +10,9 @@ export class ListaPage implements OnInit {
 
   colores: any = ['primary', 'danger', 'secondary', 'dark', 'success'];
 
-  public form = [
-    { val: 'Comprar leche', isChecked: false, color: 'success' },
-    { val: 'Sacar el perro', isChecked: false, color: 'primary' },
+  public tareas = [
+    { val: 'Comprar leche', isChecked: false, color: 'danger', fecha: new Date('2020-01-12 12:30') },
+    { val: 'Sacar el perro', isChecked: true, color: 'success', fecha: new Date('2020-05-12 1:40') },
     // { val: 'Poner la lavadora', isChecked: false, color: 'secondary' },
     // { val: 'Iniciar reunión Teams', isChecked: false, color: 'light' },
     // { val: 'Trabajar en el servicio REST', isChecked: false, color: 'danger' },
@@ -37,6 +37,12 @@ export class ListaPage implements OnInit {
           type: 'text',
           id: 'name2-id',
           placeholder: 'Nueva tarea'
+        },
+        {
+          name: 'date',
+          type: 'date',
+          id: 'date',
+          placeholder: 'Fecha'
         }
       ],
       buttons: [
@@ -52,10 +58,11 @@ export class ListaPage implements OnInit {
           handler: data => {
             console.log('Confirm Okay: ' + data.name2);
             const pos = Math.floor(Math.random() * 5);
-            this.form.push({
+            this.tareas.push({
               color: this.colores[pos],
               isChecked: false,
-              val: data.name2
+              val: data.name2,
+              fecha: data.date
             })
           }
         }
