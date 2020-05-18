@@ -51,6 +51,10 @@ export class InicioPage implements OnInit {
     {
       nombre: 'Sistema de grillas',
       url: '/grid'
+    },
+    {
+      nombre: 'Scroll infinito',
+      url: '/infinite'
     }
   ]
 
