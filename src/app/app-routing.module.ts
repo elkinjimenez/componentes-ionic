@@ -67,6 +67,10 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
   },
+  {
+    path: 'note',
+    loadChildren: () => import('./pages/note/note.module').then( m => m.NotePageModule)
+  },
 ];
 
 @NgModule({

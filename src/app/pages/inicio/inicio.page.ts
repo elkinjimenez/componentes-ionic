@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Componente, ServiciosService } from 'src/app/services/servicios.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,73 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  componentes: Componente[] = [
-    {
-      nombre: 'Alerta',
-      url: '/alert'
-    },
-    {
-      nombre: 'Lista por hacer',
-      url: '/lista'
-    },
-    {
-      nombre: 'Action sheet',
-      url: '/action-sheet'
-    },
-    {
-      nombre: 'Badges',
-      url: '/badge'
-    },
-    {
-      nombre: 'Botones',
-      url: '/button'
-    },
-    {
-      nombre: 'Tarjetas',
-      url: '/card'
-    },
-    {
-      nombre: 'Checkbox',
-      url: '/checkbox'
-    },
-    {
-      nombre: 'Chip',
-      url: '/chip'
-    },
-    {
-      nombre: 'Fecha',
-      url: '/datetime'
-    },
-    {
-      nombre: 'Botón flotante',
-      url: '/fab'
-    },
-    {
-      nombre: 'Sistema de grillas',
-      url: '/grid'
-    },
-    {
-      nombre: 'Scroll infinito',
-      url: '/infinite'
-    },
-    {
-      nombre: 'Campos - digitar',
-      url: '/input'
-    },
-    {
-      nombre: 'Listas',
-      url: '/list'
-    }
-  ]
+  componentes: Componente[];
 
-  constructor() { }
+  constructor(
+    private servicio: ServiciosService
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.componentes = this.servicio.getListaMenu();
+  }
 
-}
-
-
-interface Componente {
-  nombre: string;
-  url: string;
 }

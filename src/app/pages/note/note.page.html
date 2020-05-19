@@ -1,0 +1,16 @@
+<app-header [titulo]="'Notas'"></app-header>
+<ion-content class="ion-padding">
+  <ion-note>Eso es una nota por defecto...</ion-note>
+  <hr>
+  <ion-note color="success">Eso es una nota con color...</ion-note>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nota</ion-label>
+      <ion-note slot="end">Nota final</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nota</ion-label>
+      <ion-note slot="start">Nota Inicio</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,12 +1,13 @@
 <ion-header class="text-center">
   <ion-toolbar>
-    <ion-title>inicio</ion-title>
+    <ion-menu-button color="success" slot="end"></ion-menu-button>
+    <ion-title slot="start">Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-text-center ion-padding">
   <app-avatar></app-avatar>
-  <h1>Bienvenido</h1>
-  <hr color="white">
+  <h1 style="font-size: 50px;">Bienvenido</h1>
+  <hr color="success">
   <ion-list>
     <ion-item *ngFor="let c of componentes" [routerLink]="c.url">
       <ion-label>{{c.nombre}}</ion-label>

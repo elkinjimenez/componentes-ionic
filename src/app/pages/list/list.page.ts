@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPage implements OnInit {
 
+  @ViewChild('myList') lista: IonList;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  buttonClick() {
+    console.log('Usted hizo click en el item de boton');
   }
 
+  favorite() {
+    this.lista.closeSlidingItems();
+  }
+
+  share() { }
+
+  unread() { }
 }
