@@ -55,6 +55,14 @@ export class InicioPage implements OnInit {
     {
       nombre: 'Scroll infinito',
       url: '/infinite'
+    },
+    {
+      nombre: 'Campos - digitar',
+      url: '/input'
+    },
+    {
+      nombre: 'Listas',
+      url: '/list'
     }
   ]
 
