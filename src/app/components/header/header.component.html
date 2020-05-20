@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+    <ion-back-button *ngIf="titulo !== 'Inicio'" defaultHref="/" slot="start"></ion-back-button>
     <ion-title>{{titulo}}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="showPopover($event)">
