@@ -5,18 +5,25 @@ import { IonicModule } from '@ionic/angular';
 import { AvatarComponent } from './avatar/avatar.component';
 import { MenuComponent } from './menu/menu.component';
 import { InicioPageRoutingModule } from '../pages/inicio/inicio-routing.module';
+import { PopviewComponent } from './popview/popview.component';
 
 @NgModule({
-  declarations: [HeaderComponent, AvatarComponent, MenuComponent],
+  declarations: [
+    HeaderComponent,
+    AvatarComponent,
+    MenuComponent,
+    PopviewComponent
+  ],
   imports: [
     CommonModule,
     IonicModule,
-    InicioPageRoutingModule
+    InicioPageRoutingModule,
   ],
   exports: [
     HeaderComponent,
     AvatarComponent,
-    MenuComponent
+    MenuComponent,
+    PopviewComponent
   ]
 })
 export class ComponentsModule { }

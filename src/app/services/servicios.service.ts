@@ -65,6 +65,30 @@ export class ServiciosService {
     {
       nombre: 'Notas',
       url: '/note'
+    },
+    {
+      nombre: 'Modal',
+      url: '/modal'
+    },
+    {
+      nombre: 'Loading',
+      url: '/loading'
+    },
+    {
+      nombre: 'Progress bar',
+      url: '/progressbar'
+    },
+    {
+      nombre: 'Selecciona uno',
+      url: '/radio'
+    },
+    {
+      nombre: 'Rango',
+      url: '/range'
+    },
+    {
+      nombre: 'Refrescar',
+      url: '/refresher'
     }
   ]
 

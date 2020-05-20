@@ -1,0 +1,11 @@
+<app-header [titulo]="'Refrescar'"></app-header>
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let d of data; let i = index">
+      <ion-label>Número {{i+1}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+</ion-content>

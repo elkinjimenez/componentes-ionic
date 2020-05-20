@@ -9,8 +9,9 @@
       <ion-checkbox color="{{t.color}}" slot="end" [(ngModel)]="t.isChecked"></ion-checkbox>
     </ion-item>
   </ion-list>
+  <ion-progress-bar color="success" class="ion-padding" reversed="true" value="0" buffer="0"></ion-progress-bar>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="input()">
+    <ion-fab-button color="success" (click)="input()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

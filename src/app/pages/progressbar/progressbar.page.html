@@ -1,0 +1,21 @@
+<app-header [titulo]="'Progress bar'"></app-header>
+<ion-content class="ion-padding">
+  <!-- Default Progressbar -->
+  <br>
+  <ion-progress-bar></ion-progress-bar>
+  <br>
+  <!-- Default Progressbar with 50 percent -->
+  <ion-progress-bar value="0.5"></ion-progress-bar>
+  <br>
+  <!-- Colorize Progressbar -->
+  <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+  <br>
+  <ion-progress-bar color="success" value="0.5"></ion-progress-bar>
+  <br>
+  <!-- Other types -->
+  <ion-progress-bar color="danger" value=".5" buffer="0"></ion-progress-bar>
+  <br>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  <br>
+  <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+</ion-content>

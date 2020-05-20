@@ -1,0 +1,53 @@
+<app-header [titulo]="'Selecciona uno'"></app-header>
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Selecciona</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Biff</ion-label>
+        <ion-radio color="success" slot="start" value="biff"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Griff</ion-label>
+        <ion-radio color="success" slot="start" value="griff"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Buford</ion-label>
+        <ion-radio color="success" slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <br>
+  <h4>Valor: {{dato}}</h4>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="dato">
+      <ion-list-header>
+        <ion-label>
+          Auto Manufacturers
+        </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Cord</ion-label>
+        <ion-radio color="success" value="cord"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Duesenberg</ion-label>
+        <ion-radio color="success" value="duesenberg"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hudson</ion-label>
+        <ion-radio color="success" value="hudson"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Packard</ion-label>
+        <ion-radio color="success" value="packard"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Studebaker</ion-label>
+        <ion-radio color="success" value="studebaker"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>
