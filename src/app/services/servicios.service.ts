@@ -89,6 +89,18 @@ export class ServiciosService {
     {
       nombre: 'Refrescar',
       url: '/refresher'
+    },
+    {
+      nombre: 'Buscador',
+      url: '/search'
+    },
+    {
+      nombre: 'Toast',
+      url: '/toast'
+    },
+    {
+      nombre: 'Switch',
+      url: '/toggle'
     }
   ]
 
